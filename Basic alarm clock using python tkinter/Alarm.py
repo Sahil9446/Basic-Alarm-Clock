@@ -9,13 +9,8 @@ if alarmAm == "pm":
     alarmHour += 12
 
 while True:
-
     currentTime = datetime.datetime.now()
-    
     if alarmHour == currentTime.hour and alarmMin == currentTime.minute:
-
         print("Playing the alarm.....")
-
         playsound("Alarm.mp3")
-        
         break
